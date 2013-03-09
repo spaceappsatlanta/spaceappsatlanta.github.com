@@ -12,7 +12,7 @@ end
 
 desc 'build the static site'
 task :build do
-  sh 'bundle exec middleman build'
+  sh 'bundle exec middleman build --clean'
 end
 
 desc 'deploy build directory to github pages'
