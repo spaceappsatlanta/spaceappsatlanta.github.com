@@ -1,7 +1,7 @@
 desc 'deploy build directory to github pages'
 task :deploy do
   puts 'Deploying branch to Github Pages'
-  sha = system('git log | head -1').strip.split(' ').last
+  sha = `git log | head -1`.strip.split(' ').last
   cp_r '.nojekyll', 'build/.nojekyll'
   cd 'build' do
     system 'git add .'
