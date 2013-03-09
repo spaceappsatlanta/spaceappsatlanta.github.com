@@ -12,10 +12,8 @@ task deploy: :build do
     system 'git add .'
     system 'git add -u'
     message = "Site updated at #{Time.now.utc} (#{sha})"
-    puts "Commiting: #{message}"
     system "git commit -m \"#{message}\""
-    puts 'Pushing generated website'
     system 'git push origin master'
-    puts 'Github Pages deploy complete'
   end
+  puts 'Github Pages deploy complete'
 end
