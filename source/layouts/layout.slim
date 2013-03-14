@@ -5,4 +5,14 @@ html
     title Space Apps Atlanta
     == stylesheet_link_tag 'all'
   body
-    == yield
+    nav.navbar.navbar-fixed-top.navbar-inverse
+      .navbar-inner
+        .container
+          a.brand Space Apps Atlanta
+          ul.nav
+            li== link_to 'Challenges', '#challenges'
+            li== link_to 'Prizes', '#prizes'
+            li== link_to 'Venue', '#venue'
+            li== link_to 'Sponsors', '#sponsors'
+    .container
+      == yield

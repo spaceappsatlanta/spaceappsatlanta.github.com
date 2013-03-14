@@ -1,1 +1,55 @@
-h1#logo Space Apps Atlanta
+.hero-unit
+  h1#logo Space Apps Atlanta
+  markdown:
+    The International Space Apps Challenge is a technology development event
+    during which citizens from around the world work together to solve challenges
+    relevant to improving life on Earth and life in space. Join us in over 75
+    cities around the world or at home on April 20-21, 2013.
+
+hr
+
+section#challenges.clearfix
+  == image_tag 'STS-103_Hubble_EVA.jpg', class: 'img-rounded pull-right'
+  h2
+    ' Challenges
+    span.muted we'll be working on
+  p.lead
+    ' The list of challenges hasn't be revealed just yet. In the mean time, check out the
+    == link_to 'previews', 'http://2013.spaceappschallenge.org/challenges/'
+    '  published by NASA.
+
+hr
+
+section#prizes.clearfix
+  == image_tag 'http://placekitten.com/g/512/512', class: 'img-rounded pull-left'
+  h2
+    ' Prizes
+    span.muted for being a kitten
+  p.lead We're giving away stray kittens found on the Beltline!
+
+hr
+
+section#venue.clearfix
+  == image_tag 'USS_Highgroove.jpg', class: 'img-rounded pull-right'
+  h2
+    ' The Venue
+    span.muted USS Highgroove
+  p.lead
+    ' Big Nerd Ranch's USS Highgroove remote office will be hosting the
+    ' event. There's plenty of room for collaborating on the Bridge and
+    ' smaller breakout rooms for teams to focus.
+
+hr
+
+section#sponsors.clearfix
+  .pull-left
+    p== image_tag 'BNR.png'
+    p== image_tag 'ATV.png'
+    p== image_tag 'GitHub.png'
+  h2
+    ' Our Sponsors
+    span.muted
+
+hr
+footer
+  p== link_to 'Fork me!', 'https://github.com/spaceappsatlanta/spaceappsatlanta.github.com'

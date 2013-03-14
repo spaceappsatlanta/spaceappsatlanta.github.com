@@ -1,0 +1,51 @@
+//= require bootstrap
+//= require bootstrap-responsive
+
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Steelfish Regular';
+  src: local('♥'),
+    url('fonts/steelfish rg.otf') format('opentype');
+}
+
+body {
+  margin: 60px 0;
+  @media (max-width: 979px) {
+      margin-top: 0;
+  }
+}
+
+h1#logo {
+  font-family: 'Steelfish Regular';
+  font-size: 72px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+section {
+  padding-top: 180px;
+  > img, > div {
+    margin-top: -180px;
+    &.pull-right {
+      margin-left: 40px;
+    }
+    &.pull-left {
+      margin-right: 40px;
+    }
+    img {
+      margin-bottom: 40px;
+    }
+  }
+  h2 {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+}
+
+hr {
+  margin: 80px 0;
+}
